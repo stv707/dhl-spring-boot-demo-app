@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'b19228b5-c1e3-4539-8df4-fb76dc500488'
   imageRepository: 'stvdhlspringbootdemoapp'
   containerRegistry: 'parrotposacr.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'parrotposacr6059-auth'
 
