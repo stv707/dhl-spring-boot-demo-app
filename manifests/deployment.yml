@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: stvdhlspringbootdemoapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stvdhlspringbootdemoapp
+  template:
+    metadata:
+      labels:
+        app: stvdhlspringbootdemoapp 
+    spec:
+      containers:
+        - name: stvdhlspringbootdemoapp 
+          image: parrotposacr.azurecr.io/stvdhlspringbootdemoapp
+          ports:
+          - containerPort: 8080
